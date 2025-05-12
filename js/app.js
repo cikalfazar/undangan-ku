@@ -392,23 +392,23 @@ const opacity = () => {
         }, 100);
     });
 
-    modal.then(() => {
-        progressBar.stop();
+    // modal.then(() => {
+    //     progressBar.stop();
 
-        let op = parseInt(document.getElementById('loading').style.opacity);
-        let clear = null;
+    //     let op = parseInt(document.getElementById('loading').style.opacity);
+    //     let clear = null;
 
-        clear = setInterval(() => {
-            if (op >= 0) {
-                op -= 0.025;
-                document.getElementById('loading').style.opacity = op;
-            } else {
-                clearInterval(clear);
-                document.getElementById('loading').remove();
-                document.getElementById('exampleModal').classList.add('fade');
-            }
-        }, 10);
-    });
+    //     clear = setInterval(() => {
+    //         if (op >= 0) {
+    //             op -= 0.025;
+    //             document.getElementById('loading').style.opacity = op;
+    //         } else {
+    //             clearInterval(clear);
+    //             document.getElementById('loading').remove();
+    //             document.getElementById('exampleModal').classList.add('fade');
+    //         }
+    //     }, 10);
+    // });
 };
 
 const fotoInject = (folder, listData, idCont, idIndic, dataTarget) => {
@@ -465,7 +465,7 @@ window.addEventListener('load', () => {
     document.getElementById('formnama').value = name;
 
     modal.show();
-    opacity();
+    // opacity();
 
     // foto galeri
     let listFotoHeader = [
